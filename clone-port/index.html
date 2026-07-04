@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parnav Yadav - AI &amp; Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio de Parnav Yadav, AI and web development enthusiast building impactful digital experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&family=Rethink+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+    <div class="active-filter-layer" aria-hidden="true"></div>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <div class="loader-wrap" id="loader" aria-live="polite">
+      <div class="loader-curtain curtain-top"></div>
+      <div class="loader-curtain curtain-bottom"></div>
+      <div class="loader-ui-layer">
+        <div class="loader-terminal" id="loader-terminal">
+          <span>INITIALIZING...</span>
+          <span>SAT_LINK: SEARCHING...</span>
+          <span>ANALYSER_ACTIVE...</span>
+        </div>
+        <div class="loader-radar-box">
+          <div class="radar-circle"></div>
+          <div class="radar-coords">SAT_LINK: SEARCHING...</div>
+          <div class="radar-status">ENCRYPTED</div>
+        </div>
+        <div class="loader-freq">FREQ: <span id="loader-freq">12.4</span> Hz</div>
+      </div>
+      <div class="loader-line-container">
+        <div class="polygraph-track">
+          <span id="polygraph-fill"></span>
+        </div>
+      </div>
+      <div class="loader-info mono">
+        <div class="loader-status">SIGNAL TRACING...</div>
+        <div class="loader-counter"><span id="loader-counter">00</span>%</div>
+      </div>
+    </div>
+
+    <div class="hud-corner hud-tl">
+      <span class="hud-cam-trigger">CAM_04 [REC]</span>
+      <span class="text-accent hud-mini">SIGNAL_STRONG</span>
+    </div>
+
+    <div class="hud-corner hud-tr">
+      <span id="hud-time">00:00:00:00</span><br />
+      <span>ISO 800</span>
+      <div class="lang-switcher-static">
+        <button class="lang-btn active" type="button">FR</button>
+        <button class="lang-btn" type="button">EN</button>
+      </div>
+    </div>
+
+    <div class="hud-corner hud-bl">
+      <div class="hud-socials">
+        <a
+          href="https://github.com/DevParnav"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="hud-social-link"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.1c-3.34.73-4.04-1.42-4.04-1.42a3.18 3.18 0 0 0-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 0 1 1.84 1.24 2.55 2.55 0 0 0 3.48 1 2.55 2.55 0 0 1 .76-1.6c-2.67-.3-5.47-1.34-5.47-5.95a4.65 4.65 0 0 1 1.24-3.23 4.31 4.31 0 0 1 .12-3.18s1-.33 3.3 1.23a11.42 11.42 0 0 1 6 0c2.28-1.56 3.29-1.23 3.29-1.23a4.31 4.31 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.23c0 4.62-2.81 5.65-5.49 5.95a2.86 2.86 0 0 1 .82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/parnav-yadav-255003382"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="hud-social-link"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4.98 3.5A2.49 2.49 0 1 0 5 8.48 2.49 2.49 0 0 0 4.98 3.5ZM3 9h4v12H3Zm7 0h3.83v1.71h.05A4.2 4.2 0 0 1 17.66 8c4 0 4.73 2.63 4.73 6.05V21h-4v-6.14c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.59-2.35 3.23V21h-4Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="hud-live">
+        <span class="live-dot"></span>
+        <span>LIVE FEED</span>
+      </div>
+    </div>
+
+    <div class="hud-corner hud-br">
+      <span class="hud-mini">ANALYSER_ACTIVE...</span><br />
+      <span>SYS. DIAGNOSTIC</span><br />
+      <span class="text-accent">STABLE</span>
+    </div>
+
+    <a
+      href="https://github.com/DevParnav"
+      class="badge-3d-access"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="badge-3d-inner">
+        <div class="badge-3d-corner badge-3d-tl"></div>
+        <div class="badge-3d-corner badge-3d-tr"></div>
+        <div class="badge-3d-corner badge-3d-bl"></div>
+        <div class="badge-3d-corner badge-3d-br"></div>
+        <div class="badge-3d-scanline"></div>
+        <div class="badge-3d-content">
+          <div class="badge-3d-icon">
+            <div class="cube-3d-container">
+              <div class="cube-3d">
+                <div class="cube-face cube-front"></div>
+                <div class="cube-face cube-back"></div>
+                <div class="cube-face cube-left"></div>
+                <div class="cube-face cube-right"></div>
+                <div class="cube-face cube-top"></div>
+                <div class="cube-face cube-bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="badge-3d-text">
+            <div class="badge-3d-label mono">DEV_PROFILE</div>
+            <div class="badge-3d-title">GITHUB</div>
+            <div class="badge-3d-status mono"><span class="badge-3d-dot"></span>ONLINE</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <div class="cursor-main" aria-hidden="true"><div class="cursor-visual"></div></div>
+    <div class="cursor-data" aria-hidden="true"><span id="pointer-position">X: 0 Y: 0</span></div>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="spotlight-mask"></div>
+        <div class="scanner-line"></div>
+        <div class="floating-container">
+          <div class="float-item f-loc mono">
+            LAT: 48.8566 N<br />
+            LON: 2.3522 E<br />
+            JAIPUR_BASE_01
+          </div>
+          <div class="float-item f-photo">
+            <img
+              src="https://i.postimg.cc/YSWjZ0BV/Chat-GPT-Image-Mar-13-2026-03-25-24-PM.png"
+              class="f-img"
+              alt="code"
+            />
+            <span class="mono">PROFILE_REF.png</span>
+          </div>
+          <div class="float-item f-code mono">
+            &gt;&gt; analyzing logic...<br />
+            &gt;&gt; bug eliminated<br />
+            &gt;&gt; system optimized
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-label mono uppercase">Top Secret // Case #PY-2026</div>
+          <h1 class="hero-title serif">
+            <span class="hero-layer-back">PARNAV</span><br />
+            <span class="hero-layer-front">YADAV</span>
+          </h1>
+          <div class="hero-subtitle">
+            AI &amp; <span>Web Development</span> enthusiast.<br />
+            Building <span>impactful digital experiences</span> with code and curiosity.<br />
+            B.Tech CSE <span>(AI &amp; Data Science)</span> at JECRC University.
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="workspace-header mono">
+          <div class="workspace-brand">SYS.PARNAV_01</div>
+          <nav class="workspace-tabs" aria-label="Section navigation">
+            <a href="#home" class="workspace-tab">TERMINAL</a>
+            <a href="#about" class="workspace-tab is-active">ANALYSIS</a>
+            <a href="#projects" class="workspace-tab">OUTPUTS</a>
+            <a href="#contact" class="workspace-tab">CONTACT</a>
+          </nav>
+        </div>
+        <div class="workspace-divider"></div>
+
+        <div class="analysis-grid">
+          <article class="analysis-card identity-card identity-card--analysis">
+            <div class="analysis-title mono">[IDENTITY_MODULE]</div>
+            <div class="analysis-rule"></div>
+            <div class="identity-photo-wrap">
+              <img
+                src="https://i.postimg.cc/YSWjZ0BV/Chat-GPT-Image-Mar-13-2026-03-25-24-PM.png"
+                alt="Parnav Yadav"
+                class="identity-photo"
+              />
+            </div>
+            <div class="identity-meta identity-meta--analysis mono">
+              <div class="identity-name">PARNAV YADAV</div>
+              <div>ID: 104-B / DEV</div>
+              <div>LOCATION: JAIPUR, RAJASTHAN</div>
+              <div>XP_LEVEL: BTECH_CSE_AI_DS</div>
+              <div>LANG_1: ENGLISH</div>
+              <div>LANG_2: HINDI</div>
+              <div class="identity-status-box"><span class="status-square"></span>STATUS: OPEN TO WORK</div>
+            </div>
+          </article>
+
+          <article class="analysis-card analysis-main">
+            <div class="analysis-title mono">[PROFILE / ANALYSIS REPORT]</div>
+            <div class="analysis-rule"></div>
+            <p class="analysis-copy">
+              A B.Tech CSE (AI &amp; Data Science) anomaly based in Jaipur. Obsessed with building systems that blend
+              rigorous back-end logic with visceral front-end interfaces.
+            </p>
+
+            <div class="analysis-subtitle mono">[ACADEMIC_LOG]</div>
+            <div class="analysis-timeline">
+              <div class="analysis-timeline-item">
+                <div class="analysis-marker"></div>
+                <div class="analysis-timeline-meta mono">2025 - PRESENT</div>
+                <h3>JECRC University</h3>
+                <p>Pursuing B.Tech CSE (AI &amp; DS). Focus on establishing theoretical domain structures and practical automation bridging.</p>
+              </div>
+              <div class="analysis-timeline-item">
+                <div class="analysis-marker"></div>
+                <div class="analysis-timeline-meta mono">ONGOING</div>
+                <h3>Learning Journey</h3>
+                <p>Deepening knowledge of HTML/CSS, mastering ML models, and enhancing algorithmic efficiency in Python and C++.</p>
+              </div>
+            </div>
+          </article>
+
+          <button class="analysis-card skill-metrics-card" id="skill-metrics-trigger" type="button">
+            <div class="analysis-title mono">[SKILL_METRICS]</div>
+            <div class="analysis-rule"></div>
+            <div class="metrics-group">
+              <div class="metrics-subtitle mono">// HARD_SKILLS</div>
+              <div class="metric-row"><span>HTML / CSS</span><strong>90/100</strong></div>
+              <div class="metric-row"><span>Python</span><strong>85/100</strong></div>
+              <div class="metric-row"><span>C++</span><strong>80/100</strong></div>
+              <div class="metric-row"><span>JavaScript</span><strong>75/100</strong></div>
+            </div>
+            <div class="metrics-group">
+              <div class="metrics-subtitle mono">// SOFT_SKILLS</div>
+              <div class="metric-row"><span>Problem Solving</span><strong>ACTIVE</strong></div>
+              <div class="metric-row"><span>Learning Mindset</span><strong>ACTIVE</strong></div>
+              <div class="metric-row"><span>Creativity</span><strong>ACTIVE</strong></div>
+              <div class="metric-row"><span>Team Collaboration</span><strong>ACTIVE</strong></div>
+            </div>
+            <div class="metrics-cta mono">CLICK TO OPEN DETAILED PREVIEW</div>
+          </button>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="workspace-header mono">
+          <div class="workspace-brand">SYS.PARNAV_01</div>
+          <nav class="workspace-tabs" aria-label="Section navigation">
+            <a href="#home" class="workspace-tab">TERMINAL</a>
+            <a href="#about" class="workspace-tab">ANALYSIS</a>
+            <a href="#projects" class="workspace-tab is-active">OUTPUTS</a>
+            <a href="#contact" class="workspace-tab">CONTACT</a>
+          </nav>
+        </div>
+        <div class="workspace-divider"></div>
+        <div class="outputs-grid" id="outputs-grid"></div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-marquee mono">PORTFOLIO // CONTACT // PORTFOLIO // CONTACT</div>
+        <div class="contact-card" id="contact">
+          <div class="contact-dotline mono"><span class="contact-dot"></span>CHANNEL OPEN</div>
+          <h2 class="serif">What if we<br />worked together?</h2>
+          <a href="mailto:parnavyadav002@gmail.com" class="contact-email">parnavyadav002@gmail.com</a>
+          <a href="mailto:parnavyadav002@gmail.com" class="contact-button mono">INITIATE CONTACT</a>
+          <div class="contact-links mono">
+            <a href="https://github.com/DevParnav" target="_blank" rel="noopener noreferrer">[ GITHUB ]</a>
+            <a href="https://www.linkedin.com/in/parnav-yadav-255003382" target="_blank" rel="noopener noreferrer">[ LINKEDIN ]</a>
+          </div>
+          <div class="mono text-dim secure-line">SECURE LINE ESTABLISHED</div>
+          <div class="mono text-dim copyright">© 2026 PARNAV YADAV</div>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox-overlay" id="evidence-modal">
+      <button class="lightbox-close" id="modal-close" type="button">FERMER TERMINAL [ESC]</button>
+      <div class="lightbox-content" id="modal-content"></div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
